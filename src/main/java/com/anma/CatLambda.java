@@ -14,7 +14,6 @@ import com.anma.srv.ProcessingService;
 public class CatLambda implements RequestHandler<InputObject, Cat> {
     @Inject
     ProcessingService service;
-
     @Inject
     CatSyncService catSyncService;
 

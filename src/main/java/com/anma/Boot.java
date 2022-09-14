@@ -29,9 +29,9 @@ public class Boot {
 //            catSyncService.add(cat);
 //        }
         Cat cat = new Cat();
-        cat.setName("Vasko");
-        cat.setAge(new Random().nextInt(5));
-        cat.setColor("white");
+        cat.setName("Murko");
+        cat.setAge(new Random().nextInt(12));
+        cat.setColor("white and black");
         catSyncService.add(cat);
     }
 
