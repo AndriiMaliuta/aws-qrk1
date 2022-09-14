@@ -1,4 +1,4 @@
-package com.anma;
+package com.anma.model;
 
 public class InputObject {
     private String name;

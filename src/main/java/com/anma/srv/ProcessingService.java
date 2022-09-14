@@ -1,4 +1,6 @@
-package com.anma;
+package com.anma.srv;
+
+import com.anma.model.Cat;
 
 import javax.enterprise.context.ApplicationScoped;
 
