@@ -21,6 +21,7 @@ public class Boot {
 
     void onStart(@Observes StartupEvent event) {
         LOG.info(">>>>>>>>>>> starting");
+        System.out.println(catSyncService.findAll());
 //        for (int i = 0; i < 5; i++) {
 //            Cat cat = new Cat();
 //            cat.setName("Vasko");

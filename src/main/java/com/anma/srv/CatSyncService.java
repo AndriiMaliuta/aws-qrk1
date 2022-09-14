@@ -10,7 +10,6 @@ import java.util.stream.Collectors;
 
 @ApplicationScoped
 public class CatSyncService extends AbstractService {
-
     @Inject
     DynamoDbClient dynamoDB;
 

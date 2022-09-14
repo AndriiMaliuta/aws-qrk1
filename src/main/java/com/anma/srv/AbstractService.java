@@ -20,7 +20,7 @@ public abstract class AbstractService {
 
     protected ScanRequest scanRequest() {
         return ScanRequest.builder().tableName(getTableName())
-                .attributesToGet(CAT_NAME_COL).build();
+                .attributesToGet(CAT_NAME_COL, CAT_AGE_COL, CAT_COLOR_COL).build();
     }
 
     protected PutItemRequest putRequest(Cat cat) {
@@ -38,6 +38,7 @@ public abstract class AbstractService {
     protected GetItemRequest getRequest(String name) {
         Map<String, AttributeValue> key = new HashMap<>();
         key.put(CAT_NAME_COL, AttributeValue.builder().s(name).build());
+//        key.put(CAT_AGE_COL, AttributeValue.builder().s(name).build());
 
         return GetItemRequest.builder()
                 .tableName(getTableName())
