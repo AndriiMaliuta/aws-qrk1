@@ -1,16 +1,10 @@
 package com.anma;
 
 public class Cat {
-    private String name;
-    private int age;
-    private String color;
+     String name;
+     int age;
+     String color;
     public Cat() {}
-
-    public Cat(String name, int age, String color) {
-        this.name = name;
-        this.age = age;
-        this.color = color;
-    }
 
     public String getName() {
         return name;
@@ -33,6 +27,12 @@ public class Cat {
     }
 
     public void setColor(String color) {
+        this.color = color;
+    }
+
+    public Cat(String name, int age, String color) {
+        this.name = name;
+        this.age = age;
         this.color = color;
     }
 

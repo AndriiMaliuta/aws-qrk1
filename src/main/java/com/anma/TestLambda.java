@@ -7,13 +7,13 @@ import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 
 @Named("test")
-public class TestLambda implements RequestHandler<String, Cat> {
+public class TestLambda implements RequestHandler<InputObject, Cat> {
 
     @Inject
     ProcessingService service;
 
     @Override
-    public Cat handleRequest(String s, Context context) {
+    public Cat handleRequest(InputObject obj, Context context) {
         return service.getCat();
     }
 }
